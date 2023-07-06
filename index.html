@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title> SoundScribe </title>
+  </head>
+  <body>
+    <div style="width: 1512px; height: 982px; position: relative">
+        <div  id="heading" style="left: 558px; top: 120px; position: absolute; color: white; font-size: 128px; font-family: Yeseva One; font-weight: 400; word-wrap: break-word">SoundScribe</div>
+        <div id="description" style="width: 773px; left: 522px; top: 351px; position: absolute; text-align: center; color: white; font-size: 32px; font-family: Yeseva One; font-weight: 400; word-wrap: break-word">Welcome!!<br/><br/>SoundScribe is an API powered solution for your writing needs. Transcribe all your saved and real-time audios in editable text document in word or pdf format. Multiple language option targets wider customer base with diverse linguistic backgrounds. Easy to use, user-friendly SoundScribe application is custom made for users from diverse backgrounds.</div>
+        <img style="width: 233px; height: 370px; left: 1221px; top: 573px; position: absolute" src="glass.svg" />
+        <img style="width: 500px; height: 921px; left: 22px; top: 20px; position: absolute" src="man.svg" />
+      </div>
+      <div class="lord" style="position:relative ">
+        <div class="desclass"><div class="line1" style="position:absolute">Ensure you are in a disturbance-free environment before you giving audio input. <br><br> <br>Choose your preferred language from the drop down menu before you begin speaking.<br><br><br>Click on “Start Listening” before you begin speaking<br><br>Clear the result for re-recording or select the download option to save in .txt format
+        <br><br><br><br><br></div>
+      </div>
+                <div class="container" style="position:absolute">
+        <p class="heading">SoundScribe</p>
+        <div class="options">
+          <div class="language">
+            <p id="lang">Language</p>
+            <select name="input-language" id="language" ></select>
+          </div>
+        </div>
+        <div class="line"></div>
+        <button class="btn record">
+          <p >Start Listening</p>
+        </button>
+        <p class="heading1">Result :</p>
+        <div
+          class="result"
+          spellcheck="false"
+          placeholder="Text will be shown here"
+        >
+          <p class="interim"></p>
+        </div>
+        <div class="buttons">
+          <button class="btn clear">
+            <ion-icon name="trash-outline"></ion-icon>
+            <p>Clear</p>
+          </button>
+          <button class="btn download" disabled>
+            <ion-icon name="cloud-download-outline"></ion-icon>
+            <p>Download</p>
+          </button>
+        </div>
+      </div>
+      </div>
+      
+      
+      <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    
+
+    <!-- LANGUAGES -->
+    <script src="languages.js"></script>
+
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
+    
+
+  </body>
+  
+</html>
